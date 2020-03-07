@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="baseUrl">https://rickandmortyapi.com/api/character/</string>
+    <string name="created">Created</string>
+    <string name="url">Url</string>
+    <string name="location">Location</string>
+    <string name="origin">Origin</string>
+    <string name="gender">Gender</string>
+    <string name="type">Type</string>
+    <string name="species">Species</string>
+    <string name="status">Status</string>
+    <string name="character_image">Character Image</string>
+</resources>

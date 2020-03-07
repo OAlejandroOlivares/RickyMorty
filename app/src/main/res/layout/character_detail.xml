@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black">
+
+        <ImageView
+            android:contentDescription="@string/character_image"
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@mipmap/noimageavailable"
+            android:transitionName="image"/>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/materialTextView"
+            style="@style/TextAppearance.MaterialComponents.Headline4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+            tools:text="Rick Sanchez"
+            android:background="@color/my_color"
+            android:padding="16dp"
+            android:textColor="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2"
+            android:id="@+id/linear1"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/status"
+                android:layout_weight="0.3"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/orange"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/lightGray"
+                tools:text="Value"
+                android:id="@+id/status_value"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linear1"
+            android:id="@+id/linear2"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/species"
+                android:layout_weight="0.3"
+                android:textColor="@color/orange"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/lightGray"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Value"
+                android:layout_weight="0.6"
+                android:textAlignment="viewEnd"
+                android:id="@+id/species_value"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linear2"
+            android:id="@+id/linear3"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/type"
+                android:layout_weight="0.3"
+                android:textColor="@color/orange"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/lightGray"
+                tools:text="Value"
+                android:id="@+id/type_value"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linear3"
+            android:id="@+id/linear4"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:textColor="@color/orange"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:layout_weight="0.3"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Value"
+                android:layout_weight="0.6"
+                android:textAlignment="viewEnd"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/lightGray"
+                android:id="@+id/gender_value"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linear4"
+            android:id="@+id/linear5"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:textColor="@color/orange"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/origin"
+                android:layout_weight="0.3"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Value"
+                android:layout_weight="0.6"
+                android:textAlignment="viewEnd"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/lightGray"
+                android:id="@+id/origin_value"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linear5"
+            android:id="@+id/linear6"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:textColor="@color/orange"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/location"
+                android:layout_weight="0.3"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Value"
+                android:layout_weight="0.6"
+                android:textAlignment="viewEnd"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/lightGray"
+                android:id="@+id/location_value"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linear6"
+            android:id="@+id/linear7"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:textColor="@color/orange"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/url"
+                android:layout_weight="0.3"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Value"
+                android:layout_weight="0.6"
+                android:textAlignment="viewEnd"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/lightGray"
+                android:id="@+id/url_value"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/linear7"
+            android:id="@+id/linear8"
+            android:layout_marginTop="8dp"
+            android:paddingHorizontal="16dp"
+            android:visibility="gone">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:textColor="@color/orange"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/created"
+                android:layout_weight="0.3"
+                />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                tools:text="Value"
+                android:layout_weight="0.6"
+                android:textAlignment="viewEnd"
+                style="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textColor="@color/lightGray"
+                android:id="@+id/created_value"
+                />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightGray"
+            app:layout_constraintTop_toBottomOf="@id/linear1"/>
+        <View
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightGray"
+            app:layout_constraintTop_toBottomOf="@id/linear2"/>
+        <View
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightGray"
+            app:layout_constraintTop_toBottomOf="@id/linear3"/>
+        <View
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightGray"
+            app:layout_constraintTop_toBottomOf="@id/linear4"/>
+        <View
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightGray"
+            app:layout_constraintTop_toBottomOf="@id/linear5"/>
+        <View
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightGray"
+            app:layout_constraintTop_toBottomOf="@id/linear6"/>
+        <View
+            android:layout_marginHorizontal="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/lightGray"
+            app:layout_constraintTop_toBottomOf="@id/linear7"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
